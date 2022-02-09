@@ -7,7 +7,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <PackAsTool>true</PackAsTool>
-    <PackageId>ReGitLint</PackageId>
+    <PackageId>ReGitLint.Fork</PackageId>
     <PackageVersion>6.0.7</PackageVersion>
     <ToolCommandName>regitlint</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>

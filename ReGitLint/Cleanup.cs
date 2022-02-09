@@ -327,7 +327,7 @@ public class Cleanup : ConsoleCommand {
     }
 
     private static bool DoesJbToolExist() {
-        var exitCode = CmdUtil.Run("dotnet", "tool run jb cleanupcode -v");
+        var exitCode = CmdUtil.Run("dotnet", "jb cleanupcode -v");
         return exitCode == 0;
     }
 
@@ -381,7 +381,7 @@ dotnet tool install JetBrains.ReSharper.GlobalTools");
             exclude += @"""";
         }
 
-        var args = $@"tool run jb cleanupcode ""{slnFile}"" "
+        var args = $@"jb cleanupcode ""{slnFile}"" "
             + $@"{exclude} --include=""{include}"" "
             + string.Join(" ", jbArgs);
 
